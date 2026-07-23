@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 達卡青奧中華代表團 | 隨隊醫療與健康防疫資訊網</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-staff-snake text-red-500 text-2xl"></i>
+                <span class="font-bold text-lg tracking-wide">Dakar 2026 | 代表團醫療網</span>
+            </div>
+            <a href="#emergency" class="bg-red-600 hover:bg-red-700 text-white text-sm font-semibold px-4 py-1.5 rounded-full transition duration-200">
+                <i class="fa-solid fa-phone-flip mr-1"></i> 緊急聯繫
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero-bg text-white py-12 px-4 shadow-inner">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <span class="bg-blue-500/20 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-blue-400/30">
+                中華奧林匹克委員會 隨隊醫療組
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+                2026 達卡青年奧運會<br><span class="text-blue-400">代表團健康防疫與醫療服務網</span>
+            </h1>
+            <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto">
+                齊心守護健康，預祝勇奪佳績！本站提供代表團 79 位團員行前疫苗部署、健康調查、用藥規範及當地防護資訊。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+
+        <section>
+            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-blue-600 pl-3 mb-6">
+                行前必辦事項與快速通道
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-clipboard-user"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">1. 填寫健康調查表</h3>
+                        <p class="text-slate-600 text-sm mb-4">包含過敏史、蠶豆症（G6PD）及慢性病調查，供隊醫與台大醫院建立建檔。</p>
+                    </div>
+                    <a href="https://forms.google.com" target="_blank" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-xl text-sm transition duration-200">
+                        立即線上填寫 <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">2. 台大特診與意向書</h3>
+                        <p class="text-slate-600 text-sm mb-4">疫苗專案梯次（8/21、9/9），請下載並由監護人簽署「接種意向書」帶至現場。</p>
+                    </div>
+                    <a href="#vaccine-section" class="block text-center bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 rounded-xl text-sm transition duration-200">
+                        查看特診時程與指引
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-pills"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">3. WADA 禁藥與用藥</h3>
+                        <p class="text-slate-600 text-sm mb-4">隨隊常備藥品清單、感冒用藥篩檢與治療用途豁免（TUE）諮詢。</p>
+                    </div>
+                    <a href="#doping-section" class="block text-center bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2 rounded-xl text-sm transition duration-200">
+                        查詢禁藥規範
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="vaccine-section" class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+            <div class="border-b border-slate-100 pb-4">
+                <h2 class="text-2xl font-bold text-slate-900">四大疾病防線與疫苗/藥物地圖</h2>
+                <p class="text-slate-500 text-sm">依據衛福部疾病管制署 (CDC) 指引與台大旅遊醫學門診專案制定</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2">
+                    <div class="flex items-center space-x-2 text-amber-700 font-bold">
+                        <i class="fa-solid fa-mosquito"></i>
+                        <h3>黃熱病 (Yellow Fever) —— 大會強制</h3>
+                    </div>
+                    <p class="text-xs text-slate-600">透過斑蚊叮咬傳播。單劑活性減毒疫苗（Stamaril），一針終身免疫。施打後核發黃皮書，入境海關強制查驗。</p>
+                </div>
+
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2">
+                    <div class="flex items-center space-x-2 text-blue-700 font-bold">
+                        <i class="fa-solid fa-head-side-virus"></i>
+                        <h3>流行性腦脊髓膜炎 —— 選手村必備</h3>
+                    </div>
+                    <p class="text-xs text-slate-600">飛沫傳染。四價結合型疫苗單劑肌肉注射，防範選手村團體生活感染，保護力可維持 4-5 年。</p>
+                </div>
+
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2">
+                    <div class="flex items-center space-x-2 text-emerald-700 font-bold">
+                        <i class="fa-solid fa-utensils"></i>
+                        <h3>A 型肝炎 —— 飲食防線</h3>
+                    </div>
+                    <p class="text-xs text-slate-600">糞口傳染（飲食/水質）。代表團行前統一施打第一劑（滿 1 個月產生 95% 抗體），回國後 6-12 個月可補打第二劑。</p>
+                </div>
+
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2">
+                    <div class="flex items-center space-x-2 text-rose-700 font-bold">
+                        <i class="fa-solid fa-capsules"></i>
+                        <h3>瘧疾預防藥 (Malarone) —— 無疫苗</h3>
+                    </div>
+                    <p class="text-xs text-slate-600">副作用最低之隊醫首選藥物。抵達前 2 日開始吃、當地每日吃、返台後繼續吃 7 日。（選手/教練組共 17 錠；團本部/醫療組共 24 錠）。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blue-900 text-white p-6 md:p-8 rounded-2xl shadow-md space-y-4">
+            <h2 class="text-xl font-bold flex items-center">
+                <i class="fa-solid fa-shield-halved text-blue-400 mr-2"></i> 達卡當地三大守護守則
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-blue-100">
+                <div class="bg-blue-800/50 p-4 rounded-xl border border-blue-700/50">
+                    <span class="font-bold text-white block mb-1">1. 防蚊液不離身</span>
+                    認明含 DEET 或 Picaridin 成分之防蚊液，裸露皮膚定時補擦。
+                </div>
+                <div class="bg-blue-800/50 p-4 rounded-xl border border-blue-700/50">
+                    <span class="font-bold text-white block mb-1">2. 嚴格飲水控管</span>
+                    只喝封膜瓶裝水，不喝自來水、不吃路邊攤與冰塊，刷牙亦使用瓶裝水。
+                </div>
+                <div class="bg-blue-800/50 p-4 rounded-xl border border-blue-700/50">
+                    <span class="font-bold text-white block mb-1">3. 勿涉水與接觸動物</span>
+                    當地河流湖泊可能有寄生蟲，切勿撈水、戲水或撫摸野生動物。
+                </div>
+            </div>
+        </section>
+
+        <section id="emergency" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center space-y-4">
+            <h2 class="text-xl font-bold text-slate-900">隨隊醫療組諮詢管道</h2>
+            <p class="text-slate-500 text-sm">對於疫苗施打、用藥規範或個人健康狀況有任何疑慮，請隨時聯繫我們。</p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="mailto:doctor@ctoc.org.tw" class="bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold px-6 py-2.5 rounded-xl text-sm transition">
+                    <i class="fa-solid fa-envelope mr-1 text-slate-600"></i> 發送電子郵件
+                </a>
+                <a href="tel:0225000000" class="bg-red-50 hover:bg-red-100 text-red-700 font-semibold px-6 py-2.5 rounded-xl text-sm transition">
+                    <i class="fa-solid fa-phone mr-1"></i> 緊急電話聯繫
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 text-xs text-center py-6 border-t border-slate-800">
+        <p>2026 達卡青年奧運會 中華台北代表團 隨隊醫療組 版權所有</p>
+    </footer>
+
+</body>
+</html>
