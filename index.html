@@ -92,73 +92,52 @@
                     </a>
                 </div>
             </div>
-        </section>
+<!-- 三欄式主要網格外框 -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-8">
 
-        <section id="vaccine-section" class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
-            <div class="border-b border-slate-100 pb-4">
-                <h2 class="text-2xl font-bold text-slate-900">四大核心防護傳染病與疫苗/瘧疾用藥簡介</h2>
-                <p class="text-slate-500 text-sm">依據衛福部疾病管制署 (CDC) 指引，點按以獲得更多詳情</p>
-            </div>
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                <!-- 1. 黃熱病 (連至 yellowfever.html) -->
-                <a href="yellowfever.html" class="block p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2 hover:bg-white hover:shadow-md hover:border-amber-300 transition duration-200 cursor-pointer group">
-                    <div class="flex items-center space-x-2 text-amber-700 font-bold">
-                        <i class="fa-solid fa-mosquito"></i>
-                        <h3 class="group-hover:underline">黃熱病 (Yellow Fever) </h3>
-                    </div>
-                    <p class="text-xs text-slate-600">斑蚊叮咬傳播<br>單劑活性減毒疫苗，一針終身免疫。施打後核發黃皮書，入境海關建議攜帶備查。</p>
-                </a>
-
-                <!-- 2. 流行性腦脊髓膜炎 (連至 meningitis.html) -->
-                <a href="meningitis.html" class="block p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2 hover:bg-white hover:shadow-md hover:border-blue-300 transition duration-200 cursor-pointer group">
-                    <div class="flex items-center space-x-2 text-blue-700 font-bold">
-                        <i class="fa-solid fa-head-side-virus"></i>
-                        <h3 class="group-hover:underline">流行性腦脊髓膜炎 (Meningococcal Meningitis) </h3>
-                    </div>
-                    <p class="text-xs text-slate-600">接觸或飛沫傳染<br>四價結合型疫苗單劑肌肉注射。防範選手村團體生活感染，保護力可維持 4-5 年。</p>
-                </a>
-
-                <!-- 3. A 型肝炎 (連至 hepatitisA.html) -->
-                <a href="hepatitisA.html" class="block p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2 hover:bg-white hover:shadow-md hover:border-emerald-300 transition duration-200 cursor-pointer group">
-                    <div class="flex items-center space-x-2 text-emerald-700 font-bold">
-                        <i class="fa-solid fa-utensils"></i>
-                        <h3 class="group-hover:underline">A型肝炎 (Hepatitis A) </h3>
-                    </div>
-                    <p class="text-xs text-slate-600">糞口傳染，誤食汙染食物飲水<br>代表團行前統一施打第一劑（滿 1 個月產生 95% 抗體），回國後 6-12 個月可自行補打第二劑。</p>
-                </a>
-
-                <!-- 4. 瘧疾 (連至 malaria.html) -->
-                <a href="malaria.html" class="block p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2 hover:bg-white hover:shadow-md hover:border-rose-300 transition duration-200 cursor-pointer group">
-                    <div class="flex items-center space-x-2 text-rose-700 font-bold">
-                        <i class="fa-solid fa-capsules"></i>
-                        <h3 class="group-hover:underline">瘧疾 (Malaria)</h3>
-                    </div>
-                    <p class="text-xs text-slate-600">副作用最低之隊醫首選藥物。抵達前 2 日開始吃、當地每日吃、返台後繼續吃 7 日。（選手/教練組共 17 錠；團本部/醫療組共 24 錠）。</p>
-                </a>
-
-            </div>
-        </section>
-        <section class="bg-blue-900 text-white p-6 md:p-8 rounded-2xl shadow-md space-y-4">
-            <h2 class="text-xl font-bold flex items-center">
-                <i class="fa-solid fa-shield-halved text-blue-400 mr-2"></i> 達卡當地三大守護守則
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-blue-100">
-                <div class="bg-blue-800/50 p-4 rounded-xl border border-blue-700/50">
-                    <span class="font-bold text-white block mb-1">1. 防蚊液不離身</span>
-                    認明含 DEET 或 Picaridin 成分之防蚊液，裸露皮膚定時補擦。
+    <!-- ================= 第一欄：行前旅遊門診專區 ================= -->
+    <div class="space-y-6">
+        <!-- 可點擊欄頭按鈕 (連至 opd.html) -->
+        <a href="opd.html" class="block p-4 bg-amber-50 hover:bg-amber-100/80 border-l-4 border-amber-500 rounded-r-xl transition duration-200 shadow-sm hover:shadow-md group">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <span class="text-2xl">🏥</span>
+                    <h2 class="text-xl font-bold text-slate-800 group-hover:text-amber-900 group-hover:underline">行前旅遊門診專區</h2>
                 </div>
-                <div class="bg-blue-800/50 p-4 rounded-xl border border-blue-700/50">
-                    <span class="font-bold text-white block mb-1">2. 嚴格飲水控管</span>
-                    只喝封膜瓶裝水，不喝自來水、不吃路邊攤與冰塊，刷牙亦使用瓶裝水。
-                </div>
-                <div class="bg-blue-800/50 p-4 rounded-xl border border-blue-700/50">
-                    <span class="font-bold text-white block mb-1">3. 勿涉水與接觸動物</span>
-                    當地河流湖泊可能有寄生蟲，切勿撈水、戲水或撫摸野生動物。
-                </div>
+                <span class="text-amber-600 font-bold text-lg group-hover:translate-x-1 transition-transform">→</span>
             </div>
-        </section>
+        </a>
+    </div>
+
+    <!-- ================= 第二欄：賽會個人生活守則 ================= -->
+    <div class="space-y-6">
+        <!-- 可點擊欄頭按鈕 (連至 principle.html) -->
+        <a href="principle.html" class="block p-4 bg-blue-50 hover:bg-blue-100/80 border-l-4 border-blue-500 rounded-r-xl transition duration-200 shadow-sm hover:shadow-md group">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <span class="text-2xl">🛡️</span>
+                    <h2 class="text-xl font-bold text-slate-800 group-hover:text-blue-900 group-hover:underline">賽會個人生活守則</h2>
+                </div>
+                <span class="text-blue-600 font-bold text-lg group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- ================= 第三欄：更多關於塞內加爾 ================= -->
+    <div class="space-y-6">
+        <!-- 可點擊欄頭按鈕 (連至 aboutsenegal.html) -->
+        <a href="aboutsenegal.html" class="block p-4 bg-emerald-50 hover:bg-emerald-100/80 border-l-4 border-emerald-500 rounded-r-xl transition duration-200 shadow-sm hover:shadow-md group">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <span class="text-2xl">🌍</span>
+                    <h2 class="text-xl font-bold text-slate-800 group-hover:text-emerald-900 group-hover:underline">更多關於塞內加爾</h2>
+                </div>
+                <span class="text-emerald-600 font-bold text-lg group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+        </a>
+    </div>
+
+</div>
 
         <section id="emergency" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center space-y-4">
             <h2 class="text-xl font-bold text-slate-900">隨隊醫療組諮詢管道</h2>
