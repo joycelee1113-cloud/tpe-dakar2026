@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瘧疾 (Malaria) - 旅遊醫學資訊</title>
+    <!-- 引入 Tailwind CSS 框架 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 min-h-screen py-8 px-4 sm:px-6 lg:px-8 font-sans">
+
+    <!-- 主要內容容器 -->
+    <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
+        
+        <!-- 頁面頂部 Header (鮮紅/橙色系主題 - 強調高風險傳染病) -->
+        <div class="bg-rose-600 text-white p-6 sm:p-8">
+            <div class="inline-block bg-rose-700/60 text-xs font-semibold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
+                旅遊傳染病衛教
+            </div>
+            <h1 class="text-3xl font-bold tracking-tight">瘧疾 (Malaria)</h1>
+            <p class="text-rose-100 mt-2 text-sm">前往高風險地區請務必依醫囑按時服用預防用藥並做好防蚊措施</p>
+        </div>
+
+        <!-- 內容區域 -->
+        <div class="p-6 sm:p-8 space-y-6">
+
+            <!-- 1. 疾病簡介與發病症狀 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- 疾病簡介 -->
+                <div class="bg-rose-50 rounded-xl p-5 border border-rose-100">
+                    <h2 class="text-lg font-bold text-rose-900 flex items-center mb-2">
+                        <span class="mr-2">🦟</span> 疾病簡介
+                    </h2>
+                    <p class="text-slate-700 text-sm leading-relaxed mb-2">
+                        經由受感染的<strong class="text-rose-900">瘧蚊叮咬</strong>而傳播的寄生蟲疾病。
+                    </p>
+                    <p class="text-rose-800 text-xs leading-relaxed border-t border-rose-100 pt-2 mt-2 bg-white/60 p-2 rounded">
+                        📍 <strong>流行區域警示：</strong><strong class="text-rose-900 underline">塞內加爾全境皆屬流行區</strong>。
+                    </p>
+                </div>
+
+                <!-- 發病症狀 -->
+                <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+                    <h2 class="text-lg font-bold text-slate-800 flex items-center mb-2">
+                        <span class="mr-2">🤒</span> 發病症狀
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-2">
+                        常見症狀包括：
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 mt-2">
+                        <span class="bg-rose-100 text-rose-800 text-xs px-2.5 py-1 rounded-full font-medium">發燒</span>
+                        <span class="bg-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">畏寒顫抖</span>
+                        <span class="bg-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">出汗</span>
+                        <span class="bg-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">頭痛</span>
+                        <span class="bg-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">噁心</span>
+                        <span class="bg-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">全身酸痛及倦怠</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. 危害嚴重程度（警示區塊） -->
+            <div class="bg-red-50 border-l-4 border-red-600 rounded-r-xl p-5">
+                <h2 class="text-lg font-bold text-red-900 flex items-center mb-2">
+                    <span class="mr-2">🚨</span> 危害嚴重程度
+                </h2>
+                <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                    全境且全年皆有<strong class="text-red-700 font-bold">熱帶瘧（惡性瘧）</strong>感染風險。
+                </p>
+                <div class="bg-white/80 rounded-lg p-3 text-xs text-slate-700 space-y-1 border border-red-200">
+                    <p>• <strong>器官衰竭：</strong>瘧疾重症大多發生於惡性瘧，會導致血液或代謝異常及嚴重器官衰竭。</p>
+                    <p class="text-red-700 font-bold">• 死亡率：重症死亡率可超過 <span class="bg-red-200 text-red-900 px-1.5 py-0.5 rounded font-bold text-sm">10%</span>。</p>
+                </div>
+            </div>
+
+            <!-- 3. 預防用藥與副作用 -->
+            <div class="border-t border-slate-100 pt-6 space-y-4">
+                <h2 class="text-xl font-bold text-slate-800 flex items-center">
+                    <span class="mr-2">💊</span> 預防用藥說明
+                </h2>
+                
+                <div class="bg-amber-50 rounded-xl p-5 border border-amber-200">
+                    <h3 class="font-bold text-amber-900 mb-2 flex items-center">
+                        <span class="mr-1.5">⚠️</span> 特別提醒：目前無有效疫苗！
+                    </h3>
+                    <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                        目前瘧疾無有效疫苗可供施打，<strong class="text-amber-900 underline">必須完全依賴口服預防用藥</strong>。
+                    </p>
+                    
+                    <div class="bg-white p-3.5 rounded-lg border border-amber-200 text-xs text-slate-700 space-y-2 mb-3">
+                        <p class="font-bold text-slate-800 border-b border-slate-100 pb-1">💊 常見口服預防藥物包括：</p>
+                        <ul class="list-disc list-inside space-y-1 text-slate-600 pl-1">
+                            <li><strong>Atovaquone/proguanil</strong> (Malarone®，阿托奎酮與氯胍混合製劑)</li>
+                            <li><strong>Mefloquine</strong> (美爾奎寧)</li>
+                            <li><strong>Doxycycline</strong> (去氧羥四黴素)</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-amber-100/80 rounded-lg p-3 text-xs text-amber-950 font-medium border border-amber-300">
+                        📌 <strong>服藥三階段原則：</strong>藥物必須在<strong class="text-red-700">出發前</strong>就開始吃、在<strong class="text-red-700">當地按時吃</strong>，且<strong class="text-red-700">回國後繼續吃完整組療程</strong>，才能達到將近 <span class="bg-white text-emerald-700 font-bold px-1 rounded border border-emerald-300">100%</span> 的保護效果！
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+                    <h3 class="font-bold text-slate-800 mb-2">● 常見副作用</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        依選擇藥物不同，可能會有輕微噁心、腹瀉、頭痛等副作用。若有不適請及時諮詢醫師。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 底部按鈕：返回主頁 -->
+            <div class="border-t border-slate-100 pt-6 text-center">
+                <a href="index.html" class="inline-flex items-center justify-center px-6 py-3 bg-slate-800 text-white font-medium rounded-xl hover:bg-slate-700 transition duration-150 shadow-md hover:shadow-lg">
+                    ← 返回主頁面
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
