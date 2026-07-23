@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A型肝炎 (Hepatitis A) - 旅遊醫學資訊</title>
+    <!-- 引入 Tailwind CSS 框架 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 min-h-screen py-8 px-4 sm:px-6 lg:px-8 font-sans">
+
+    <!-- 主要內容容器 -->
+    <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
+        
+        <!-- 頁面頂部 Header (翡翠綠/藍綠色系主題) -->
+        <div class="bg-teal-600 text-white p-6 sm:p-8">
+            <div class="inline-block bg-teal-700/60 text-xs font-semibold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
+                旅遊傳染病衛教
+            </div>
+            <h1 class="text-3xl font-bold tracking-tight">A型肝炎 (Hepatitis A)</h1>
+            <p class="text-teal-100 mt-2 text-sm">前往衛生條件較不佳地區請注意飲食衛生與疫苗接種</p>
+        </div>
+
+        <!-- 內容區域 -->
+        <div class="p-6 sm:p-8 space-y-6">
+
+            <!-- 1. 疾病簡介與發病症狀 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- 疾病簡介 -->
+                <div class="bg-teal-50 rounded-xl p-5 border border-teal-100">
+                    <h2 class="text-lg font-bold text-teal-900 flex items-center mb-2">
+                        <span class="mr-2">🦠</span> 疾病簡介
+                    </h2>
+                    <p class="text-slate-700 text-sm leading-relaxed mb-2">
+                        A型肝炎為存在已久的疾病，流行與環境衛生密切相關，好發於衛生條件不佳的地區。
+                    </p>
+                    <p class="text-teal-800 text-xs leading-relaxed border-t border-teal-100 pt-2 mt-2 bg-white/60 p-2 rounded">
+                        ⚠️ <strong>主要傳染途徑：</strong><strong class="text-teal-900">糞口感染</strong>。即食用或飲用遭 A 型肝炎病毒污染之食物或水而感染。
+                    </p>
+                </div>
+
+                <!-- 發病症狀 -->
+                <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+                    <h2 class="text-lg font-bold text-slate-800 flex items-center mb-2">
+                        <span class="mr-2">🤒</span> 發病症狀
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-2">
+                        感染後常見症狀包括：
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 mt-2">
+                        <span class="bg-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">疲倦</span>
+                        <span class="bg-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">厭食</span>
+                        <span class="bg-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">發燒</span>
+                        <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-medium">黃疸</span>
+                        <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-medium">尿液顏色變濃</span>
+                        <span class="bg-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full font-medium">上腹部疼痛</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. 危害嚴重程度（警示區塊） -->
+            <div class="bg-amber-50 border-l-4 border-amber-500 rounded-r-xl p-5">
+                <h2 class="text-lg font-bold text-amber-900 flex items-center mb-2">
+                    <span class="mr-2">⚠️</span> 危害嚴重程度與預後
+                </h2>
+                <p class="text-slate-700 text-sm leading-relaxed mb-2">
+                    許多人感染後只有輕微症狀或沒有症狀，大多數都會自然痊癒並產生抗體。
+                </p>
+                <div class="bg-white/80 rounded-lg p-3 text-xs text-slate-700 space-y-1 border border-amber-200">
+                    <p class="text-rose-700 font-bold">• 猛爆性肝炎風險：極少數病例會發生猛爆型肝炎，嚴重可能致死。</p>
+                    <p>• <strong>致死率：</strong>A 型肝炎致死率約為 <span class="bg-amber-200 text-amber-900 px-1 rounded font-bold">千分之三 (0.3%)</span>。</p>
+                </div>
+            </div>
+
+            <!-- 3. 疫苗簡介與副作用 -->
+            <div class="border-t border-slate-100 pt-6 space-y-4">
+                <h2 class="text-xl font-bold text-slate-800 flex items-center">
+                    <span class="mr-2">💉</span> 疫苗接種說明
+                </h2>
+                
+                <div class="bg-emerald-50 rounded-xl p-5 border border-emerald-100">
+                    <h3 class="font-bold text-emerald-900 mb-2">● 疫苗簡介</h3>
+                    <p class="text-slate-700 text-sm leading-relaxed mb-3">
+                        目前國內上市的 A 型肝炎疫苗均為<strong class="text-emerald-800">不活化疫苗</strong>（共 3 種廠牌），核准接種年齡為出生滿 12 個月以上。
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        <div class="bg-white p-3 rounded-lg border border-emerald-200">
+                            <span class="text-emerald-700 font-bold block mb-1">📅 接種劑次與間隔</span>
+                            <p class="text-slate-600">成人與兒童皆為 <strong class="text-slate-800">2 劑</strong>，兩劑需間隔 <strong class="text-slate-800">6 至 12 個月</strong>（至少 6 個月）。</p>
+                        </div>
+                        <div class="bg-white p-3 rounded-lg border border-emerald-200">
+                            <span class="text-emerald-700 font-bold block mb-1">🛡️ 保護效力</span>
+                            <p class="text-slate-600">僅施打第 1 劑即可提供 <strong class="text-emerald-800">95% 以上</strong>保護力；完成 2 劑可提供 <strong class="text-emerald-800">20 年以上</strong>保護力。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+                    <h3 class="font-bold text-slate-800 mb-2">● 常見副作用</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        偶有注射部位疼痛、紅腫、熱感、輕微發燒、倦怠等反應，通常 2~3 天內會恢復。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 底部按鈕：返回主頁 -->
+            <div class="border-t border-slate-100 pt-6 text-center">
+                <a href="index.html" class="inline-flex items-center justify-center px-6 py-3 bg-slate-800 text-white font-medium rounded-xl hover:bg-slate-700 transition duration-150 shadow-md hover:shadow-lg">
+                    ← 返回主頁面
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
