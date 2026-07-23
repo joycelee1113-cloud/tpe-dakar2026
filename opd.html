@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>行前旅遊門診專區 - 旅遊醫學資訊網</title>
-    <!-- 1. 引入 Tailwind CSS (沒有這行就會變素顏純文字) -->
+    <!-- 引入 Tailwind CSS 與 FontAwesome 圖示 -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 2. 引入 FontAwesome 圖示庫 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-slate-50 min-h-screen py-8 px-4 sm:px-6 lg:px-8 font-sans">
@@ -24,17 +23,17 @@
         </div>
 
         <!-- 內容區域 -->
-        <div class="p-6 sm:p-8 space-y-8">
+        <div class="p-6 sm:p-8 space-y-10">
 
-            <!-- 主區塊：四大核心防護傳染病與疫苗/瘧疾用藥簡介 -->
+            <!-- 區塊一：四大核心防護傳染病與疫苗/瘧疾用藥簡介 -->
             <section class="space-y-4">
-                <div>
+                <div class="border-b border-slate-200 pb-3">
                     <h2 class="text-2xl font-bold text-slate-800">四大核心防護傳染病與疫苗/瘧疾用藥簡介</h2>
                     <p class="text-xs text-slate-500 mt-1">依據衛福部疾病管制署 (CDC) 指引，點按卡片獲得更多詳情</p>
                 </div>
 
                 <!-- 四大卡片網格 (2x2 排版) -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
 
                     <!-- 1. 黃熱病 -->
                     <a href="yellowfever.html" class="block p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2 hover:bg-white hover:shadow-md hover:border-amber-300 transition duration-200 cursor-pointer group">
@@ -61,7 +60,7 @@
                     </a>
 
                     <!-- 3. A 型肝炎 -->
-                    <a href="HepatitisA.html" class="block p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2 hover:bg-white hover:shadow-md hover:border-emerald-300 transition duration-200 cursor-pointer group">
+                    <a href="HepatitisA.html" class="block p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2 hover:bg-white hover:shadow-md hover:border-emerald-300 transition duration-200 group">
                         <div class="flex items-center space-x-2 text-emerald-700 font-bold">
                             <i class="fa-solid fa-utensils"></i>
                             <h3 class="group-hover:underline">A型肝炎 (Hepatitis A)</h3>
@@ -73,16 +72,117 @@
                     </a>
 
                     <!-- 4. 瘧疾 -->
-                    <a href="malaria.html" class="block p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2 hover:bg-white hover:shadow-md hover:border-rose-300 transition duration-200 cursor-pointer group">
+                    <a href="malaria.html" class="block p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2 hover:bg-white hover:shadow-md hover:border-rose-300 transition duration-200 group">
                         <div class="flex items-center space-x-2 text-rose-700 font-bold">
                             <i class="fa-solid fa-capsules"></i>
                             <h3 class="group-hover:underline">瘧疾 (Malaria)</h3>
                         </div>
                         <p class="text-xs text-slate-600 leading-relaxed">
-                            疾管署推薦副作用最低之藥物。抵達前 2 日開始吃、當地每日吃、返台後繼續吃 7 日。
+                            副作用最低之隊醫首選藥物。抵達前 2 日開始吃、當地每日吃、返台後繼續吃 7 日。（選手/教練組共 17 錠；團本部/醫療組共 24 錠）。
                         </p>
                     </a>
 
+                </div>
+            </section>
+
+
+            <!-- 區塊二：施打疫苗與使用藥物注意事項 -->
+            <section class="space-y-6 pt-4">
+                <div class="border-b border-slate-200 pb-3">
+                    <h2 class="text-2xl font-bold text-slate-800 flex items-center space-x-2">
+                        <span>💉</span>
+                        <span>施打疫苗與使用藥物注意事項</span>
+                    </h2>
+                    <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                        為了確保代表團全體成員在最安全、最舒適的狀態下完成防護接種，並讓當天專案流程順利進行，請全體成員<span class="text-amber-800 font-bold">（未成年選手請由家長／監護人陪同）</span>仔細閱讀以下提醒事項：
+                    </p>
+                </div>
+
+                <!-- 一、疫苗接種提醒 -->
+                <div class="bg-amber-50/60 rounded-2xl p-6 border border-amber-200/80 space-y-5">
+                    <h3 class="text-lg font-bold text-amber-900 flex items-center space-x-2 border-b border-amber-200 pb-2">
+                        <i class="fa-solid fa-syringe text-amber-700"></i>
+                        <span>一、疫苗接種提醒</span>
+                    </h3>
+
+                    <div class="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
+                        
+                        <!-- 1. 接種前 -->
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-slate-900 flex items-center space-x-1.5">
+                                <span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded text-xs">1</span>
+                                <span>接種前調整至最佳身體狀態</span>
+                            </h4>
+                            <ul class="list-disc list-inside space-y-1.5 pl-2 text-slate-600">
+                                <li><strong class="text-slate-800">保持良好作息：</strong>接種前請避免熬夜，保持充足睡眠。</li>
+                                <li><strong class="text-slate-800">暫緩接種情況：</strong>若有以下狀況請提前告知代表團，經醫師評估後可能需要暫緩或調整施打時程：
+                                    <ul class="list-circle list-inside pl-5 mt-1 space-y-1 text-slate-500 bg-white/70 p-3 rounded-lg border border-amber-100">
+                                        <li><strong>發燒或急性中重度疾病：</strong>身體正處於急性發炎或感染狀態，可能影響疫苗免疫反應或難以釐清不適來源。</li>
+                                        <li><strong>免疫功能不全或使用免疫抑制劑：</strong>因本次包含黃熱病疫苗（活性減毒疫苗），相關病史需由醫師特別評估。</li>
+                                        <li><strong>嚴重過敏史：</strong>對特定疫苗成分或藥物曾有嚴重過敏反應（如引發過敏性休克者）。</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 2. 接種後 -->
+                        <div class="space-y-2 pt-2">
+                            <h4 class="font-bold text-slate-900 flex items-center space-x-1.5">
+                                <span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded text-xs">2</span>
+                                <span>接種後常見副作用及照護事項</span>
+                            </h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+                                <div class="bg-white p-3 rounded-xl border border-amber-200/60">
+                                    <span class="font-bold text-amber-900 block mb-1">🩹 輕微不適</span>
+                                    <p class="text-slate-600 text-xs">1–3 天內注射部位紅腫疼痛，或輕微發燒、頭痛、倦怠，屬建立保護力的正常反應。</p>
+                                </div>
+                                <div class="bg-white p-3 rounded-xl border border-amber-200/60">
+                                    <span class="font-bold text-amber-900 block mb-1">💤 充足睡眠休息</span>
+                                    <p class="text-slate-600 text-xs">1–2 天內避免劇烈運動；選手應避免進行超高強度訓練，給予身體時間恢復。</p>
+                                </div>
+                                <div class="bg-white p-3 rounded-xl border border-amber-200/60">
+                                    <span class="font-bold text-amber-900 block mb-1">💧 大量飲水</span>
+                                    <p class="text-slate-600 text-xs">每日補充足量水分，促進身體新陳代謝。</p>
+                                </div>
+                                <div class="bg-white p-3 rounded-xl border border-amber-200/60">
+                                    <span class="font-bold text-amber-900 block mb-1">🥗 補充營養</span>
+                                    <p class="text-slate-600 text-xs">均衡飲食，多攝取蛋白質與維生素，協助體能維持。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. 疑問與緊急諮詢 -->
+                        <div class="space-y-2 pt-2">
+                            <h4 class="font-bold text-slate-900 flex items-center space-x-1.5">
+                                <span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded text-xs">3</span>
+                                <span>疑問與緊急諮詢</span>
+                            </h4>
+                            <p class="text-slate-600 text-xs leading-relaxed bg-amber-100/60 p-3 rounded-xl border border-amber-200/80">
+                                若對自身健康狀況是否適合施打有任何疑問，或施打後出現持續高燒不退（超過 48 小時）、嚴重過敏反應（如呼吸困難、全身紅疹）等異常狀況，請務必第一時間聯繫<strong class="text-amber-900 font-bold">奧會醫療團</strong>，我們將提供即時的醫療評估與協助。
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 二、瘧疾藥物使用需知 -->
+                <div class="bg-rose-50/70 rounded-2xl p-6 border border-rose-200 space-y-4">
+                    <div class="flex items-center justify-between border-b border-rose-200 pb-2">
+                        <h3 class="text-lg font-bold text-rose-900 flex items-center space-x-2">
+                            <i class="fa-solid fa-pills text-rose-700"></i>
+                            <span>二、瘧疾藥物使用需知</span>
+                        </h3>
+                        <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-medium">
+                            待工作小組會議確認
+                        </span>
+                    </div>
+
+                    <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+                        <ul class="list-disc list-inside space-y-2 text-slate-700 bg-white p-4 rounded-xl border border-rose-100">
+                            <li>必須每日固定時間使用藥物（建議每日早餐服藥）。</li>
+                            <li>瘧疾藥物最好與食物一起服用，且需要搭配喝大量的水。</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
