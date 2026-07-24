@@ -19,13 +19,71 @@
 <body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
 
 <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
+        <!-- 左側：Logo與標題 -->
         <div class="flex items-center space-x-2">
             <i class="fa-solid fa-staff-snake text-red-500 text-2xl"></i>
             <span class="font-bold text-lg tracking-wide">Dakar 2026 | TPE</span>
         </div>
+
+        <!-- 右側：倒數計時器（樣式完全還原圖片） -->
+        <div class="flex items-center space-x-2 font-mono text-xs text-slate-300">
+            <div class="text-center">
+                <span id="cd-days" class="text-lg sm:text-xl font-bold text-white block">00</span>
+                <span class="text-[10px] uppercase text-slate-400">DAYS</span>
+            </div>
+            <span class="text-slate-500 font-bold -mt-3">:</span>
+            <div class="text-center">
+                <span id="cd-hours" class="text-lg sm:text-xl font-bold text-white block">00</span>
+                <span class="text-[10px] uppercase text-slate-400">HOURS</span>
+            </div>
+            <span class="text-slate-500 font-bold -mt-3">:</span>
+            <div class="text-center">
+                <span id="cd-mins" class="text-lg sm:text-xl font-bold text-white block">00</span>
+                <span class="text-[10px] uppercase text-slate-400">MINS</span>
+            </div>
+            <span class="text-slate-500 font-bold -mt-3">:</span>
+            <div class="text-center">
+                <span id="cd-secs" class="text-lg sm:text-xl font-bold text-white block">00</span>
+                <span class="text-[10px] uppercase text-slate-400">SECS</span>
+            </div>
+        </div>
     </div>
 </nav>
+
+<!-- 倒數計時 JavaScript 邏輯 -->
+<script>
+    // 設定 2026 達卡青奧開幕日：2026年10月31日
+    const targetDate = new Date("2026-10-31T00:00:00").getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+
+        if (diff > 0) {
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("cd-days").innerText = String(days).padStart(2, '0');
+            document.getElementById("cd-hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("cd-mins").innerText = String(mins).padStart(2, '0');
+            document.getElementById("cd-secs").innerText = String(secs).padStart(2, '0');
+        } else {
+            document.getElementById("cd-days").innerText = "00";
+            document.getElementById("cd-hours").innerText = "00";
+            document.getElementById("cd-mins").innerText = "00";
+            document.getElementById("cd-secs").innerText = "00";
+        }
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
 
     <header class="hero-bg text-white py-12 px-4 shadow-inner">
         <div class="max-w-4xl mx-auto text-center space-y-4">
