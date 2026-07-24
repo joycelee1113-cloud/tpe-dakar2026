@@ -23,32 +23,49 @@
         <!-- 左側：Logo與標題 -->
         <div class="flex items-center space-x-2">
             <i class="fa-solid fa-staff-snake text-red-500 text-2xl"></i>
-            <span class="font-bold text-lg tracking-wide">Dakar 2026 | TPE</span>
+            <span class="font-bold text-lg tracking-wide">TEAM TPE</span>
         </div>
 
-        <!-- 右側：倒數計時器（樣式完全還原圖片） -->
-        <div class="flex items-center space-x-2 font-mono text-xs text-slate-300">
-            <div class="text-center">
-                <span id="cd-days" class="text-lg sm:text-xl font-bold text-white block">00</span>
-                <span class="text-[10px] uppercase text-slate-400">DAYS</span>
-            </div>
-            <span class="text-slate-500 font-bold -mt-3">:</span>
-            <div class="text-center">
-                <span id="cd-hours" class="text-lg sm:text-xl font-bold text-white block">00</span>
-                <span class="text-[10px] uppercase text-slate-400">HOURS</span>
-            </div>
-            <span class="text-slate-500 font-bold -mt-3">:</span>
-            <div class="text-center">
-                <span id="cd-mins" class="text-lg sm:text-xl font-bold text-white block">00</span>
-                <span class="text-[10px] uppercase text-slate-400">MINS</span>
-            </div>
-            <span class="text-slate-500 font-bold -mt-3">:</span>
-            <div class="text-center">
-                <span id="cd-secs" class="text-lg sm:text-xl font-bold text-white block">00</span>
-                <span class="text-[10px] uppercase text-slate-400">SECS</span>
-            </div>
+<!-- 右側：官網標題文字 + 倒數計時器 -->
+<div class="flex items-center space-x-4">
+
+    <!-- 官網標題文字（第一行大、第二行小） -->
+    <div class="text-right hidden md:block">
+        <span class="block text-xs font-bold tracking-wider text-white uppercase">
+            SUMMER YOUTH OLYMPIC GAMES DAKAR
+        </span>
+        <span class="block text-[10px] text-slate-400 font-medium">
+            31 October - 13 November, 2026
+        </span>
+    </div>
+
+    <!-- 豎直分割線（可選，增加質感） -->
+    <div class="hidden md:block h-6 w-[1px] bg-slate-700"></div>
+
+    <!-- 倒數計時器數字 -->
+    <div class="flex items-center space-x-2 font-mono text-xs text-slate-300">
+        <div class="text-center">
+            <span id="cd-days" class="text-lg sm:text-xl font-bold text-white block">00</span>
+            <span class="text-[10px] uppercase text-slate-400">DAYS</span>
+        </div>
+        <span class="text-slate-500 font-bold -mt-3">:</span>
+        <div class="text-center">
+            <span id="cd-hours" class="text-lg sm:text-xl font-bold text-white block">00</span>
+            <span class="text-[10px] uppercase text-slate-400">HOURS</span>
+        </div>
+        <span class="text-slate-500 font-bold -mt-3">:</span>
+        <div class="text-center">
+            <span id="cd-mins" class="text-lg sm:text-xl font-bold text-white block">00</span>
+            <span class="text-[10px] uppercase text-slate-400">MINS</span>
+        </div>
+        <span class="text-slate-500 font-bold -mt-3">:</span>
+        <div class="text-center">
+            <span id="cd-secs" class="text-lg sm:text-xl font-bold text-white block">00</span>
+            <span class="text-[10px] uppercase text-slate-400">SECS</span>
         </div>
     </div>
+
+</div>
 </nav>
 
 <!-- 倒數計時 JavaScript 邏輯 -->
