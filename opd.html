@@ -78,7 +78,7 @@
                             <h3 class="group-hover:underline">瘧疾 (Malaria)</h3>
                         </div>
                         <p class="text-xs text-slate-600 leading-relaxed">
-                            瘧蚊叮咬。發燒頭痛全身痠痛。
+                            瘧蚊叮咬。發燒頭痛全身痠痛。<br>
                             口服藥物預防。抵達前2日至返台後7日，每日服用。
                         </p>
                     </a>
@@ -176,16 +176,57 @@
                         <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-medium">
                             待工作小組會議確認
                         </span>
-                    </div>
+<div class="space-y-4 text-xs sm:text-sm text-slate-700">
+    <!-- 1. 視覺化時間軸圖表（優先呈現） -->
+    <div class="bg-amber-50/60 rounded-2xl border border-amber-200/80 shadow-sm p-4 sm:p-5 font-sans">
+        
+        <!-- 頂部標籤列 -->
+        <div class="bg-amber-800/90 text-white rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 shadow-inner">
+            <div class="flex items-center space-x-2 font-bold text-sm sm:text-base">
+                <i class="fa-solid fa-plane-departure text-amber-200"></i>
+                <span>Malarone 服藥時程表</span>
+            </div>
+            <div class="flex items-center bg-amber-950/40 rounded-lg px-2.5 py-1 text-xs font-semibold text-amber-100 gap-1.5 border border-amber-700/50">
+                <span>前2天</span>
+                <span>前1天</span>
+                <span class="bg-amber-400 text-amber-950 px-1.5 py-0.5 rounded font-bold">出發</span>
+                <i class="fa-solid fa-mosquito text-amber-300"></i>
+                <span class="bg-amber-400 text-amber-950 px-1.5 py-0.5 rounded font-bold">回國</span>
+                <span>後1天</span>
+                <span>後7天</span>
+            </div>
+        </div>
 
-                    <div class="space-y-2 text-xs sm:text-sm text-slate-700">
-                        <ul class="list-disc list-inside space-y-2 text-slate-700 bg-white p-4 rounded-xl border border-rose-100">
-                            <li>必須每日固定時間使用藥物（建議每日早餐服藥）。</li>
-                            <li>瘧疾藥物最好與食物一起服用，且需要搭配喝大量的水。</li>
-                        </ul>
-                    </div>
+        <!-- 動態時間軸長條圖 -->
+        <div class="space-y-2">
+            <div class="flex justify-between text-[11px] font-bold text-slate-500 px-1">
+                <span class="text-sky-700">【準備期】前1-2天</span>
+                <span class="text-amber-700">【停留疫區】每日一顆</span>
+                <span class="text-emerald-700">【返國後】繼續吃7天</span>
+            </div>
+
+            <div class="relative w-full h-9 bg-slate-100 rounded-xl overflow-hidden border border-slate-200 shadow-inner flex">
+                <div class="w-[20%] bg-sky-200/80 border-r border-white flex items-center justify-center text-[11px] font-bold text-sky-900">
+                    前 1-2 天
                 </div>
-            </section>
+                <div class="w-[50%] bg-amber-500 text-white flex items-center justify-center font-bold text-xs shadow-sm">
+                    每天一顆 (定時隨餐)
+                </div>
+                <div class="w-[30%] bg-emerald-500 text-white border-l border-white flex items-center justify-center text-xs font-bold">
+                    後 7 天
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 2. 服藥注意事項清單（放在圖表下方） -->
+    <ul class="list-disc list-inside space-y-2 text-slate-700 bg-white p-4 rounded-xl border border-amber-200/60 shadow-sm">
+        <li><strong>Malarone® (瑪拉朗)</strong>：抵達前 1-2 日至返台後 7 日，每日固定服用。</li>
+        <li>必須每日固定時間使用藥物（建議每日早餐或隨餐服藥）。</li>
+        <li>瘧疾藥物最好與食物或牛奶一起服用，以利吸收並減少胃部不適，且需搭配大量開水。</li>
+    </ul>
+</div>
 
             <!-- 底部按鈕：返回主頁 -->
             <div class="border-t border-slate-100 pt-6 text-center">
