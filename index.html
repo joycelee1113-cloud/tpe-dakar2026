@@ -102,18 +102,23 @@
 </body>
 </html>
 
-    <header class="hero-bg text-white py-12 px-4 shadow-inner">
-        <div class="max-w-4xl mx-auto text-center space-y-4">
+<header class="relative bg-cover bg-center bg-no-repeat text-white py-12 px-4 shadow-inner overflow-hidden" 
+        style="background-image: url('images/BG.jpg');">
+    
+    <!-- 半透明黑膜遮罩（讓背景照片有質感，且文字讀得更清楚） -->
+    <div class="absolute inset-0 bg-slate-900/60"></div>
 
-            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">
-                2026年 第4屆達卡青年奧運會<br><span class="text-blue-400">代表團醫療服務網</span>
-            </h1>
-            <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto">
-                齊心守護健康，預祝勇奪佳績！<br>
-                本站提供團員各項醫療防疫資訊 及 團本部資料蒐集平台
-            </p>
-        </div>
-    </header>
+    <!-- 主要文字內容區塊（加上 relative z-10 確保浮在遮罩之上） -->
+    <div class="relative z-10 max-w-4xl mx-auto text-center space-y-4">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight drop-shadow-md">
+            2026年 第4屆達卡青年奧運會<br><span class="text-blue-400">代表團醫療服務網</span>
+        </h1>
+        <p class="text-slate-200 text-sm md:text-base max-w-2xl mx-auto drop-shadow">
+            齊心守護健康，預祝勇奪佳績！<br>
+            本站提供團員各項醫療防疫資訊 及 團本部資料蒐集平台
+        </p>
+    </div>
+</header>
 
     <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
 
