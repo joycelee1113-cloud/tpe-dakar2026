@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026達卡青奧 Safeguarding & Welfare 隨身指南</title>
+    <style>
+        :root {
+            --primary-color: #004d99;
+            --secondary-color: #e6f2ff;
+            --alert-color: #d9534f;
+            --text-color: #333333;
+            --border-color: #dddddd;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f6f8fa; /* GitHub style background */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            background-color: var(--secondary-color);
+            padding: 10px;
+            font-size: 1.3em;
+        }
+        h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .step-card {
+            border-left: 4px solid var(--primary-color);
+        }
+        .step-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .do-dont-box {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .box-do {
+            background-color: #f1f8f1;
+            border: 1px solid #c8e6c9;
+        }
+        .box-do h3 { color: #2e7d32; }
+        .box-dont {
+            background-color: #fdf3f4;
+            border: 1px solid #ffcdd2;
+        }
+        .box-dont h3 { color: #c62828; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        tr:nth-child(even) { background-color: #fcfcfc; }
+        
+        .principle-num {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-right: 10px;
+            display: inline-block;
+            min-width: 30px;
+        }
+        .footer-note {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff8e1;
+            border: 1px solid #ffecb3;
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+        .boundary-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .boundary-list li {
+            margin-bottom: 12px;
+            padding-left: 28px;
+            position: relative;
+        }
+        .boundary-list li:last-child { margin-bottom: 0; }
+        .boundary-do::before {
+            content: '☑';
+            position: absolute;
+            left: 0;
+            color: #2e7d32;
+            font-size: 1.2em;
+        }
+        .boundary-dont::before {
+            content: '☒';
+            position: absolute;
+            left: 0;
+            color: #c62828;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>2026年第4屆達卡青奧中華臺北代表團<br>Safeguarding & Welfare 隨身指南<br><small style="font-size:0.7em; color:#666;">(工作人員版)</small></h1>
+
+        <h2>■ 通報與轉介流程(6步驟)</h2>
+        <p style="font-weight:bold; color:var(--alert-color);">發現疑似異常,選手求助或他人反映</p>
+        <div class="grid-container">
+            <div class="card step-card">
+                <div class="step-title">STEP 01 觀察/接獲揭露</div>
+                <p style="margin:0;">確認當事人是否有立即危險</p>
+            </div>
+            <div class="card step-card">
+                <div class="step-title">STEP 02 確認立即安全</div>
+                <p style="margin:0;">有危險 → 先移離並啟動醫療緊急處置</p>
+            </div>
+            <div class="card step-card">
+                <div class="step-title">STEP 03 聯繫 Welfare Officer</div>
+                <p style="margin:0;">WO 為代表團 Safeguarding 主責窗口<br>• 盡快聯繫 Welfare Officer<br>• 以必要資訊客觀記錄</p>
+            </div>
+            <div class="card step-card">
+                <div class="step-title">STEP 04 風險分流</div>
+                <p style="margin:0;">一般福利 / 關切 / 緊急危險三個層級</p>
+            </div>
+            <div class="card step-card">
+                <div class="step-title">STEP 05 啟動協作</div>
+                <p style="margin:0;">醫療、心理、管理,賽會機制各就其位</p>
+            </div>
+            <div class="card step-card">
+                <div class="step-title">STEP 06 紀錄與追蹤</div>
+                <p style="margin:0;">必要知悉原則紀錄,確認後續支持</p>
+            </div>
+        </div>
+
+        <h2>■ 接獲揭露的正確回應</h2>
+        <div class="flex-container">
+            <div class="do-dont-box box-do">
+                <h3>應該做</h3>
+                <ul style="padding-left:20px; margin:0;">
+                    <li>保持冷靜,讓選手用自己的話說</li>
+                    <li>表達關心:「謝謝你告訴我」</li>
+                </ul>
+            </div>
+            <div class="do-dont-box box-dont">
+                <h3>不應該做</h3>
+                <ul style="padding-left:20px; margin:0;">
+                    <li>質疑或不相信選手的陳述</li>
+                    <li>追問不必要的事件細節</li>
+                    <li>承諾「我不會告訴任何人」</li>
+                    <li>自行調查或面對面質問涉嫌人</li>
+                    <li>在群組或無關人員間討論案情</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>■ 事件分流三個層級</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>層級</th>
+                    <th>情形例示</th>
+                    <th>處理原則</th>
+                    <th>主要窗口</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>一般 Welfare Concern</strong></td>
+                    <td>情緒低落,適應困難、隊内摩擦</td>
+                    <td>WO協調支持;必要時轉介醫療</td>
+                    <td>Welfare Officer</td>
+                </tr>
+                <tr>
+                    <td><strong>Safeguarding Concern</strong></td>
+                    <td>霸凌、羞辱、疑似疏忽、邊界模糊</td>
+                    <td>WO安全確認及分流;視需要與醫療、團本部協作</td>
+                    <td>WO 主責;專業協作</td>
+                </tr>
+                <tr>
+                    <td><strong>Immediate / Serious Risk</strong></td>
+                    <td>暴力、性侵害、重大傷害,人身危險</td>
+                    <td>先確保安全及醫療;同步啟動 Dakar 2026 / IOC 正式機制</td>
+                    <td>WO + 醫療長 + 團本部 + 賽會機制</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>▲ 風險警訊辨識</h2>
+        <div class="grid-container">
+            <div class="card">
+                <div class="step-title">情緒異常</div>
+                <p style="margin:0;">明顯退縮、情緒崩潰、突然行為改變</p>
+            </div>
+            <div class="card">
+                <div class="step-title">孤立與控制</div>
+                <p style="margin:0;">成人刻意單獨接觸、阻止交流、不當禮物</p>
+            </div>
+            <div class="card">
+                <div class="step-title">過度訓練</div>
+                <p style="margin:0;">醫療或飲食需求被忽視、被迫忍痛訓練</p>
+            </div>
+            <div class="card">
+                <div class="step-title">夜間異常</div>
+                <p style="margin:0;">擅自離開選手村、深夜異常人員接觸</p>
+            </div>
+            <div class="card">
+                <div class="step-title">網路風險</div>
+                <p style="margin:0;">霸凌、威脅訊息、私密影像或隱私曝光</p>
+            </div>
+            <div class="card">
+                <div class="step-title">隊內關係</div>
+                <p style="margin:0;">排擠、羞辱、歧視性語言、集體孤立</p>
+            </div>
+        </div>
+
+        <h2>● 六大關鍵原則</h2>
+        <div class="grid-container" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+            <div class="card"><span class="principle-num">01</span><strong>選手安全第一：</strong>選手(尤其未成年)的安全與福祉高於一切</div>
+            <div class="card"><span class="principle-num">02</span><strong>接納與傾聽：</strong>接獲揭露時保持冷靜、不質疑、不責備</div>
+            <div class="card"><span class="principle-num">03</span><strong>及時通報：</strong>有疑慮即聯繫 WO,不需等待確認才行動</div>
+            <div class="card"><span class="principle-num">04</span><strong>必要知悉原則：</strong>案件資訊僅告知有處理必要的人員</div>
+            <div class="card"><span class="principle-num">05</span><strong>禁止報復：</strong>不得對通報者或配合處理者有任何不利對待</div>
+            <div class="card"><span class="principle-num">06</span><strong>協作非單打：</strong>WO、醫療、教練與賽會機制各司其職</div>
+        </div>
+
+        <h2>■ 重要聯絡資訊</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>聯絡對象</th>
+                    <th>姓名</th>
+                    <th>電話/WhatsApp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NOC Welfare Officer (主責)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>醫療長</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>帶領隊 (代表隊領隊)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dakar 2026 Safeguarding Officer</td>
+                    <td>(賽會提供)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>當地緊急服務</td>
+                    <td>110/119</td>
+                    <td>大使館:</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>▲ 保密原則說明</h2>
+        <p style="background-color: var(--secondary-color); padding: 15px; border-left: 4px solid var(--primary-color);">
+        不能承諾：「我不會告訴任何人。」<br>
+        應該說：<strong>「為了保護你的安全，我可能需要告訴能幫助你的相關人員，但我會盡量保護你的隱私。」</strong>
+        </p>
+        <p>案件資訊依<strong>必要知悉原則</strong>處理，不在工作群組或無關人員間討論。</p>
+
+        <h2>■ 互動界線提醒</h2>
+        <div class="flex-container">
+            <div class="do-dont-box box-do">
+                <ul class="boundary-list">
+                    <li class="boundary-do">雙人進行夜間查房</li>
+                    <li class="boundary-do">訊息紀錄可被查閱</li>
+                    <li class="boundary-do">肢體接觸僅限醫療或必要情形</li>
+                    <li class="boundary-do">教育場合事前告知家長</li>
+                </ul>
+            </div>
+            <div class="do-dont-box box-dont">
+                <ul class="boundary-list">
+                    <li class="boundary-dont">單獨密閉空間接觸未成年選手</li>
+                    <li class="boundary-dont">私下密集聯繫或非公事訊息</li>
+                    <li class="boundary-dont">在選手房間單獨與選手相處</li>
+                    <li class="boundary-dont">要求選手保守與你的接觸秘密</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            <p style="margin-top:0;"><strong>核心提醒：</strong>Welfare Officer 的任務是「安全確保、傾聽、風險分流、轉介」，不是獨立調查者。有疑慮，立即聯繫 WO。</p>
+            <p style="margin-bottom:0; font-size:0.9em; color:#666;">本文件為工作性質，含敏感資訊，依必要知悉原則使用。中華奧林匹克委員會 ©2026</p>
+        </div>
+    </div>
+</body>
+</html>
