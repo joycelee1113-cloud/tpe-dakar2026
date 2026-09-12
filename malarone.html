@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -17,9 +16,9 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
 
-    <div class="max-w-4xl mx-auto px-4 py-8 md:py-12">
+    <div class="max-w-4xl mx-auto px-4 py-8 md:py-12 space-y-6">
         <!-- 頂部返回與標題卡片 -->
-        <div class="mb-6">
+        <div>
             <a href="javascript:history.back()" class="inline-flex items-center text-sm font-medium text-teal-600 hover:text-teal-800 transition mb-4">
                 <i class="fa-solid fa-arrow-left mr-2"></i> 返回前頁
             </a>
@@ -47,6 +46,14 @@
                     </ul>
                 </div>
             </div>
+        </div>
+
+        <!-- 服藥範例圖片 (寬度調整為 70% 並居中) -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 text-center">
+            <h2 class="text-lg font-bold text-slate-800 mb-4 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-circle-info text-teal-600"></i> Malarone 服藥範例說明
+            </h2>
+            <img src="images/Malarone.png" alt="Malarone服藥範例" class="w-[70%] h-auto mx-auto rounded-xl shadow-sm border border-slate-200">
         </div>
 
         <!-- 項目時程表格 -->
@@ -187,7 +194,7 @@
         </div>
 
         <!-- 頁腳說明 -->
-        <footer class="mt-8 text-center text-xs text-slate-400">
+        <footer class="pt-4 text-center text-xs text-slate-400">
             隊醫團隊關心您的健康・請務必配合用藥規範
         </footer>
     </div>
@@ -220,7 +227,5 @@
             }
         });
     </script>
-</body>
-            <img src="images/Malarone.png" alt="Malarone服藥範例" class="w-full h-auto rounded-xl shadow-sm border border-slate-200">
 </body>
 </html>
