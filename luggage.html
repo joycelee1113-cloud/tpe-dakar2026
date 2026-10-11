@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>打包清單：手提行李 / 隨身行李</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-4xl mx-auto">
+    <header class="mb-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center pb-4 border-b border-slate-200 gap-4">
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-bold text-slate-900">打包清單</h1>
+        <p class="text-sm text-slate-500 mt-1">手提行李 / 隨身行李檢核表（自動儲存勾選狀態）</p>
+      </div>
+      <button id="reset-btn" class="text-xs bg-slate-200 hover:bg-slate-300 text-slate-700 font-medium py-2 px-3 rounded-lg transition-colors">
+        重設所有勾選
+      </button>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <section class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80">
+        <h2 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-2 mb-3 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>重要文件
+        </h2>
+        <div class="space-y-2.5">
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="doc-passport" class="w-5 h-5 rounded border-slate-300 text-blue-600 focus:ring-blue-500">
+            <span class="text-sm">護照 & 簽證</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="doc-card-cash" class="w-5 h-5 rounded border-slate-300 text-blue-600 focus:ring-blue-500">
+            <span class="text-sm">信用卡 & 外幣現金</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80">
+        <h2 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-2 mb-3 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>3C電子產品
+        </h2>
+        <div class="space-y-2.5">
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="3c-phone" class="w-5 h-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+            <span class="text-sm">手機</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="3c-cable" class="w-5 h-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+            <span class="text-sm">充電線</span>
+          </label>
+          <label class="flex items-start gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="3c-powerbank" class="w-5 h-5 mt-0.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+            <div>
+              <span class="text-sm font-medium">行動電源</span>
+              <p class="text-xs text-amber-600">標註100Wh以下，最多帶2個</p>
+            </div>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="3c-earphones" class="w-5 h-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+            <span class="text-sm">耳機</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="3c-adapter" class="w-5 h-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+            <span class="text-sm">萬國插座</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80">
+        <h2 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-2 mb-3 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>個人用品
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="personal-tissues" class="w-5 h-5 rounded border-slate-300 text-emerald-600">
+            <span class="text-sm">面紙、濕紙巾</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="personal-sleep" class="w-5 h-5 rounded border-slate-300 text-emerald-600">
+            <span class="text-sm">眼罩、耳塞</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="personal-contacts" class="w-5 h-5 rounded border-slate-300 text-emerald-600">
+            <span class="text-sm">隱形眼鏡、藥水</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="personal-sunglasses" class="w-5 h-5 rounded border-slate-300 text-emerald-600">
+            <span class="text-sm">太陽眼鏡</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="personal-sunscreen" class="w-5 h-5 rounded border-slate-300 text-emerald-600">
+            <span class="text-sm">防曬乳</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="personal-repellent" class="w-5 h-5 rounded border-slate-300 text-emerald-600">
+            <span class="text-sm">防蚊液</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="personal-hat" class="w-5 h-5 rounded border-slate-300 text-emerald-600">
+            <span class="text-sm">帽子</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="personal-rain" class="w-5 h-5 rounded border-slate-300 text-emerald-600">
+            <span class="text-sm">雨具</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="personal-pillow" class="w-5 h-5 rounded border-slate-300 text-emerald-600">
+            <span class="text-sm">頸枕</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80">
+        <h2 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-2 mb-3 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>衣物與鞋類
+        </h2>
+        <div class="space-y-2.5">
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="cloth-uniform" class="w-5 h-5 rounded border-slate-300 text-amber-600">
+            <span class="text-sm font-medium text-slate-900">公發衣物</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="cloth-under" class="w-5 h-5 rounded border-slate-300 text-amber-600">
+            <span class="text-sm">內衣褲</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="cloth-socks" class="w-5 h-5 rounded border-slate-300 text-amber-600">
+            <span class="text-sm">襪子</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="cloth-sleep" class="w-5 h-5 rounded border-slate-300 text-amber-600">
+            <span class="text-sm">睡衣</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="cloth-laundry-bag" class="w-5 h-5 rounded border-slate-300 text-amber-600">
+            <span class="text-sm">汙衣袋</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="cloth-slippers" class="w-5 h-5 rounded border-slate-300 text-amber-600">
+            <span class="text-sm font-medium text-amber-700">拖鞋 (重要必備!)</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 md:col-span-2">
+        <h2 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-2 mb-3 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>盥洗及生理用品
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="toiletries-soap" class="w-5 h-5 rounded border-slate-300 text-rose-600">
+            <span class="text-sm">洗髮精、沐浴乳、洗面乳</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="toiletries-teeth" class="w-5 h-5 rounded border-slate-300 text-rose-600">
+            <span class="text-sm">牙膏、牙刷</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="toiletries-towel" class="w-5 h-5 rounded border-slate-300 text-rose-600">
+            <span class="text-sm">毛巾、浴巾</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="toiletries-female" class="w-5 h-5 rounded border-slate-300 text-rose-600">
+            <span class="text-sm">女生生理用品</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="toiletries-male" class="w-5 h-5 rounded border-slate-300 text-rose-600">
+            <span class="text-sm">男生刮鬍子用品</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none">
+            <input type="checkbox" data-id="toiletries-scissors" class="w-5 h-5 rounded border-slate-300 text-rose-600">
+            <span class="text-sm">小剪刀</span>
+          </label>
+          <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer select-none sm:col-span-2 md:col-span-3">
+            <input type="checkbox" data-id="toiletries-basket" class="w-5 h-5 rounded border-slate-300 text-rose-600">
+            <span class="text-sm">去公用浴室洗澡的提袋籃子</span>
+          </label>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    const STORAGE_KEY = 'packing_checklist_states';
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const resetBtn = document.getElementById('reset-btn');
+
+    // 讀取紀錄
+    const savedStates = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    checkboxes.forEach(cb => {
+      const id = cb.dataset.id;
+      if (savedStates[id]) {
+        cb.checked = true;
+      }
+      cb.addEventListener('change', () => {
+        savedStates[id] = cb.checked;
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(savedStates));
+      });
+    });
+
+    // 重設按鈕
+    resetBtn.addEventListener('click', () => {
+      if (confirm('確定要清空所有已勾選的項目嗎？')) {
+        checkboxes.forEach(cb => {
+          cb.checked = false;
+        });
+        localStorage.removeItem(STORAGE_KEY);
+      }
+    });
+  </script>
+</body>
+</html>
