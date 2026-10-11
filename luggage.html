@@ -8,6 +8,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen py-8 px-4 sm:px-6 lg:px-8">
   <div class="max-w-4xl mx-auto">
+    <!-- Header -->
     <header class="mb-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center pb-4 border-b border-slate-200 gap-4">
       <div>
         <h1 class="text-2xl sm:text-3xl font-bold text-slate-900">打包清單</h1>
@@ -18,8 +19,10 @@
       </button>
     </header>
 
+    <!-- Content Grid -->
     <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
       
+      <!-- 重要文件 -->
       <section class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80">
         <h2 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-2 mb-3 flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>重要文件
@@ -36,6 +39,7 @@
         </div>
       </section>
 
+      <!-- 3C電子產品 -->
       <section class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80">
         <h2 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-2 mb-3 flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>3C電子產品
@@ -67,6 +71,7 @@
         </div>
       </section>
 
+      <!-- 個人用品 -->
       <section class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80">
         <h2 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-2 mb-3 flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>個人用品
@@ -111,6 +116,7 @@
         </div>
       </section>
 
+      <!-- 衣物與鞋類 -->
       <section class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80">
         <h2 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-2 mb-3 flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>衣物與鞋類
@@ -143,6 +149,7 @@
         </div>
       </section>
 
+      <!-- 盥洗及生理用品 -->
       <section class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 md:col-span-2">
         <h2 class="text-base font-semibold text-slate-900 border-b border-slate-100 pb-2 mb-3 flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>盥洗及生理用品
@@ -180,6 +187,16 @@
       </section>
 
     </main>
+
+    <!-- 返回首頁按鈕 -->
+    <div class="mt-10 mb-6 text-center">
+      <a href="index.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition-colors shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        返回首頁
+      </a>
+    </div>
   </div>
 
   <script>
